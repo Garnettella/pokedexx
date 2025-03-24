@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       <link rel="stylesheet" href="https://fontawesome.com/icons/droplet?f=classic&s=solid"> 
+        <title>POKEDEX</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            button{
+            border-radius: 18px;
+              width: 80px;
+              height: 30px;
+              cursor: pointer;
+              transition: 0.2s ease;
+              border: none;
+            padding: 5px 10px;
+            margin-right: 5px;
+             font-size:15px ;
+            }
+            #grass{
+                background-color: #7bfc7b;
+            }
+            #poison{
+                background-color: rgb(247, 147, 247);
+            }
+            #green{
+                background-color: #23db23;
+            }
+            #red{
+                background-color: rgb(228, 57, 57);
+            }
+            #blue{
+                background-color: rgb(149, 149, 235);
+            }
+             #light{
+                background-color: #e0dd24;
+            } 
+            img{
+                width: 100px;
+                height: 100px;
+                margin: auto;
+            }
+            .Poison{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                margin: 70px 0px;
+                height: 300p; 
+            }
+             .Poison:hover{
+                transform: translateY(-10px);
+            }
+            .Flying{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                margin: 70px 0px;
+            }
+             .Flying:hover{
+                transform: translateY(10px);
+            } 
+            .Water{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                margin: 70px 0px; 
+            }
+             .Water:hover{
+                transform: translateY(-10px);
+            }.fire{
+                background-color: rgb(248, 70, 70);
+            }
+           .profile{
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.1);
+                width: 300px;
+                /* text-align: center; */
+                color: beige;
+                padding: 20px;
+                cursor: pointer;
+            }
+            .profile img{
+                width: 110px;
+                height: 110px;
+                /* object-fit: center; */
+                margin-top:-70px;
+                margin-bottom: 70px;
+                display: flex;
+                justify-content: center;
+            }
+            
+             .profile h2{
+                font-size:30px ;
+                margin-bottom: 10px;
+            }
+             .profile p{
+                font-size:15px ;
+                margin-bottom: 20px;
+            }
+            .profile button:hover{
+                background-color: #c2acf5;
+            }
+              
+        </style>
+    </head>
+    
+    <body>
+        <div>
+            <div class="title">
+                <div class="Poison">
+                    <div class="profile"; id="green">
+                        <img src="bulbasaur1.png">
+                        <h2>Bulbasaur</h2>
+                        <P>#001</P>
+                        <button id="grass"><i class="fa fa-leaf">Grass</i></button>
+                        <button id="poison"><i class='fas fa-flask'>Poison</i></button>                  
+                       </div>   
+                     <div class="profile" id="green">
+                        <img src="pokemon8.webp">
+                        <h2>Ivysaur</h2>
+                        <P>#002</P>
+                        <button id="grass"><i class="fa fa-leaf">Grass</i></button>
+                        <button id="poison"><i class='fas fa-flask'>Poison</i></button>              
+                           </div> 
+                     <div class="profile" id="green">
+                        <img src="venusaur.webp">
+                        <h2>Venusaur</h2>
+                        <P>#003</P>
+                        <button id="grass"><i class="fa fa-leaf">Grass</i></button>
+                        <button id="poison"><i class='fas fa-flask'>Poison</i></button>                  
+                       </div>
+                       <div class="profile" id="red">
+                        <img src="pokemon1.png">
+                        <h2>charmander</h2>
+                        <P>#004</P>
+                        <button class="fire"><i class="fa fa-fire">Fire</i></button>
+                     </div>
+                    </div>
+
+               <div class="Flying">
+                 <div class="profile" id="red">
+                    <img src="charmeleon.png">
+                    <h2>charmeleon</h2>
+                    <P>#005</P>
+                    <button class="fire"><i class="fa fa-fire">Fire</i></button>
+                 </div> 
+                 <div class="profile" id="red">
+                    <img src="pokemon3.png">
+                    <h2>charizard</h2>
+                    <P>#006</P>
+                    <button class="fire"><i class="fa fa-fire">Fire</i></button>
+                    <button style="background-color: rgb(123, 158, 199);">Flying</button>
+                 </div>
+                 <div class="profile" id="light">
+                    <img src="PIKACHU.png">
+                    <h2>Pikachu</h2>
+                    <P>#007</P>
+                    <button>lightning</button>
+                 </div>
+                 <div class="profile" id="light">
+                    <img src="pokemon11.webp">
+                    <h2>Alolan</h2>
+                    <P>#008</P>
+                    <button>lightning</button> 
+                </div> 
+               </div>
+
+               <div class="Water">
+                <div class="profile" id="light">
+                    <img src="pokemon12.webp">
+                    <h2>Pachirisu</h2>
+                    <P>#009</P>
+                    <button>lightning</button>                   
+                  </div>
+                <div class="profile" id="blue">
+                   <img src="pokemon9.png">
+                   <h2>Wartortle</h2>
+                   <P>#010</P>
+                   <button class="water"><i class="fa-solid fa-droplet">Water</i></button>
+                </div>
+                <div class="profile" id="blue">
+                   <img src="SQUIRTLE.png">
+                   <h2>Squirtle</h2>
+                   <P>#011</P>
+                   <button class="water"><i class="fa-sharp fa-solid fa-droplet">Water</i></button>
+                </div>
+                <div class="profile" id="blue">
+                   <img src="pokemon10.png">
+                   <h2>Blastoise</h2>
+                   <P>#012</P>
+                   <button class="water"><i class="fa-solid fa-droplet">Water</i></button>
+                   <i class="fa-solid fa-droplet"></i>
+               </div> 
+            </div>
+
+               </div>
+            </div>
+    </body>
+</html>
+
+
