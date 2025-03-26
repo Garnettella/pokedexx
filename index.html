@@ -110,6 +110,40 @@
             .profile button:hover{
                 background-color: #c2acf5;
             }
+
+   @media (max-width: 768px) {
+    .Poison, .Flying, .Water {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 20px;
+        margin: 20px 0px;
+    }
+
+    .profile {
+        width: 90%; /* Make cards take full width */
+        margin: auto;
+    }
+
+    .profile img {
+        width: 80px; /* Reduce image size */
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .profile h2 {
+        font-size: 20px; /* Reduce font size */
+    }
+
+    .profile p {
+        font-size: 14px;
+    }
+
+    button {
+        width: 70px; /* Smaller buttons */
+        height: 25px;
+        font-size: 13px;
+    }
+}
+
               
         </style>
     </head>
